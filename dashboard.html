@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fa;
+      text-align: center;
+    }
+    .sidebar {
+      width: 220px;
+      height: 100vh;
+      background-color: #1f2a44;
+      color: white;
+      position: fixed;
+      display: flex;
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: left;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: white;
+      padding: 12px 20px;
+      display: block;
+      transition: background 0.3s;
+    }
+    .sidebar a:hover, .sidebar a.active {
+      background-color: #2e3b5b;
+      border-radius: 4px;
+    }
+    .main-content {
+      margin-left: 220px;
+      padding: 30px;
+    }
+    .header {
+      background-color: #2e3b5b;
+      color: white;
+      padding: 20px;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    .card {
+      background-color: white;
+      margin-top: 30px;
+      padding: 25px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Dashboard</h2>
+    <a href="#" class="active">Home</a>
+    <a href="#">Students</a>
+    <a href="#">Settings</a>
+    <a href="#">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <div class="header">Welcome to Student Dashboard</div>
+    <div class="card">
+      <h3>Hello Administrator 👋</h3>
+      <p>Use the sidebar to manage students, adjust settings, or securely logout.</p>
+      <p>This dashboard helps you track, update, and organize student information easily.</p>
+    </div>
+  </div>
+</body>
+</html>
